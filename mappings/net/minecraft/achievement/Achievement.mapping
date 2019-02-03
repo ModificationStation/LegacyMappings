@@ -1,0 +1,10 @@
+CLASS ny net/minecraft/achievement/Achievement
+	FIELD a displayColumn I
+	FIELD b displayRow I
+	FIELD c parentAchievement Lny;
+	FIELD d theItemStack Liz;
+	FIELD l achievementDescription Ljava/lang/String;
+	FIELD m statStringFormatter Lgt;
+	FIELD n isSpecial Z
+	METHOD a setStatStringFormatter (Lgt;)Lny;
+	METHOD b setSpecial ()Lny;

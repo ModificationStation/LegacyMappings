@@ -1,0 +1,4 @@
+CLASS aa net/minecraft/container/PlayerContainer
+	FIELD a craftMatrix Lmq;
+	FIELD b craftResult Llw;
+	FIELD c isSinglePlayer Z

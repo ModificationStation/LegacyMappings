@@ -1,0 +1,158 @@
+CLASS uu net/minecraft/block/Block
+	FIELD A BEDROCK Luu;
+	FIELD B WATER_MOVING Luu;
+	FIELD C WATER_STILL Luu;
+	FIELD D LAVA_MOVING Luu;
+	FIELD E LAVA_STILL Luu;
+	FIELD F SAND Luu;
+	FIELD G GRAVEL Luu;
+	FIELD H GOLD_ORE Luu;
+	FIELD I IRON_ORE Luu;
+	FIELD J COAL_ORE Luu;
+	FIELD K LOG Luu;
+	FIELD L LEAVES Lbk;
+	FIELD M SPONGE Luu;
+	FIELD N GLASS Luu;
+	FIELD O LAPIS_ORE Luu;
+	FIELD P LAPIS_BLOCK Luu;
+	FIELD Q DISPENSER Luu;
+	FIELD R SANDSTONE Luu;
+	FIELD S NOTEBLOCK Luu;
+	FIELD T BED Luu;
+	FIELD U POWERED_RAIL Luu;
+	FIELD V DETECTOR_RAIL Luu;
+	FIELD W STICKY_PISTON_BASE Luu;
+	FIELD X COBWEB Luu;
+	FIELD Y TALL_GRASS Lru;
+	FIELD Z DEAD_BUSH Ljb;
+	FIELD aA CROPS Luu;
+	FIELD aB TILLED_DIRT Luu;
+	FIELD aC FURNACE Luu;
+	FIELD aD FURNACE_BURNING Luu;
+	FIELD aE SIGN Luu;
+	FIELD aF WOODEN_DOOR Luu;
+	FIELD aG LADDER Luu;
+	FIELD aH RAIL Luu;
+	FIELD aI COBBLESTONE_STAIRS Luu;
+	FIELD aJ SIGN_WALL Luu;
+	FIELD aK LEVER Luu;
+	FIELD aL STONE_PRESSURE_PLATE Luu;
+	FIELD a blockName Ljava/lang/String;
+	FIELD aM IRON_DOOR Luu;
+	FIELD aN WOODEN_PRESSURE_PLATE Luu;
+	FIELD aO REDSTONE_ORE Luu;
+	FIELD aP REDSTONE_ORE_GLOWING Luu;
+	FIELD aQ REDSTONE_TORCH_OFF Luu;
+	FIELD aR REDSTONE_TORCH_ON Luu;
+	FIELD aS STONE_BUTTON Luu;
+	FIELD aT SNOW Luu;
+	FIELD aU ICE Luu;
+	FIELD aV SNOW_BLOCK Luu;
+	FIELD aW CACTUS Luu;
+	FIELD aX CLAY Luu;
+	FIELD aY SUGAR_CANE Luu;
+	FIELD aZ JUKEBOX Luu;
+	FIELD aa PISTON_BASE Luu;
+	FIELD ab PISTON_EXTENSION Lh;
+	FIELD ac WOOL Luu;
+	FIELD ad PISTON_MOVING Lut;
+	FIELD ae FLOWER_YELLOW Lwb;
+	FIELD af FLOWER_RED Lwb;
+	FIELD ag MUSHROOM_BROWN Lwb;
+	FIELD ah MUSHROOM_RED Lwb;
+	FIELD ai GOLD_BLOCK Luu;
+	FIELD aj IRON_BLOCK Luu;
+	FIELD ak DOUBLE_SLAB Luu;
+	FIELD al SLAB Luu;
+	FIELD am BRICK Luu;
+	FIELD an TNT Luu;
+	FIELD ao BOOKSHELF Luu;
+	FIELD ap MOSSY_COBBLESTONE Luu;
+	FIELD aq OBSIDIAN Luu;
+	FIELD ar TORCH Luu;
+	FIELD as FIRE Lyq;
+	FIELD at MOB_SPAWNER Luu;
+	FIELD au WOODEN_STAIRS Luu;
+	FIELD av CHEST Luu;
+	FIELD aw REDSTONE_DUST Luu;
+	FIELD ax DIAMOND_ORE Luu;
+	FIELD ay DIAMOND_BLOCK Luu;
+	FIELD az CRAFTING_TABLE Luu;
+	FIELD bA blockMaterial Lln;
+	FIELD bB slipperiness F
+	FIELD ba FENCE Luu;
+	FIELD bb PUMPKIN Luu;
+	FIELD bc NETHERRACK Luu;
+	FIELD bd SOUL_SAND Luu;
+	FIELD be GLOWSTONE Luu;
+	FIELD bf PORTAL Lak;
+	FIELD bg JACK_O_LANTERN Luu;
+	FIELD bh CAKE Luu;
+	FIELD bi REDSTONE_REPEATER_OFF Luu;
+	FIELD bj REDSTONE_REPEATER_ON Luu;
+	FIELD bk LOCKED_CHEST Luu;
+	FIELD bl TRAP_DOOR Luu;
+	FIELD bm blockIndexInTexture I
+	FIELD bn blockId I
+	FIELD bo blockHardness F
+	FIELD bp blockResistance F
+	FIELD bq blockConstructorCalled Z
+	FIELD br enableStats Z
+	FIELD bs minX D
+	FIELD bt minY D
+	FIELD bu minZ D
+	FIELD bv maxX D
+	FIELD bw maxY D
+	FIELD bx maxZ D
+	FIELD by stepSound Lct;
+	FIELD bz blockParticleGravity F
+	FIELD d soundPowderFootstep Lct;
+	FIELD e soundWoodFootstep Lct;
+	FIELD f soundGravelFootstep Lct;
+	FIELD g soundGrassFootstep Lct;
+	FIELD h soundStoneFootstep Lct;
+	FIELD i soundMetalFootstep Lct;
+	FIELD j soundGlassFootstep Lct;
+	FIELD k soundClothFootstep Lct;
+	FIELD l soundSandFootstep Lct;
+	FIELD m blocksList [Luu;
+	FIELD n tickOnLoad [Z
+	FIELD o opaqueCubeLookup [Z
+	FIELD p isBlockContainer [Z
+	FIELD q lightOpacity [I
+	FIELD r canBlockGrass [Z
+	FIELD s lightValue [I
+	FIELD t setNeighborNotifyOnMetadataChange [Z
+	FIELD u STONE Luu;
+	FIELD v GRASS Lwp;
+	FIELD w DIRT Luu;
+	FIELD x COBBLESTONE Luu;
+	FIELD y WOODEN_PLANKS Luu;
+	FIELD z SAPLING Luu;
+	METHOD <init> (ILln;)V
+		ARG 1 blockId
+		ARG 2 blockMaterial
+	METHOD a setLightValue (F)Luu;
+		ARG 1 lightValue
+	METHOD a setBlockBounds (FFFFFF)V
+		ARG 1 minX
+		ARG 2 minY
+		ARG 3 minZ
+		ARG 4 maxX
+		ARG 5 maxY
+		ARG 6 maxZ
+	METHOD a setStepSound (Lct;)Luu;
+		ARG 1 stepSound
+	METHOD b getRenderType ()I
+	METHOD b setResistance (F)Luu;
+		ARG 1 resistance
+	METHOD b setTickOnLoad (Z)Luu;
+	METHOD c setHardness (F)Luu;
+		ARG 1 hardness
+	METHOD d renderAsNormalBlock ()Z
+	METHOD g setLightOpacity (I)Luu;
+		ARG 1 lightOpacity
+	METHOD j disableNeighborNotifyOnMetadataChange ()Luu;
+	METHOD k initBlock ()V
+	METHOD l setUnbreakable ()Luu;
+	METHOD m getHardness ()F

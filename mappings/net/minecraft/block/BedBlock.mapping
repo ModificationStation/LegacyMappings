@@ -1,0 +1,7 @@
+CLASS ve net/minecraft/block/BedBlock
+	FIELD a headBlockToFootBlockMap [[I
+	METHOD a setBedOccupied (Lfd;IIIZ)V
+	METHOD d getDirectionFromMetadata (I)I
+	METHOD e isBlockFootOfBed (I)Z
+	METHOD f isBedOccupied (I)Z
+	METHOD r setBounds ()V

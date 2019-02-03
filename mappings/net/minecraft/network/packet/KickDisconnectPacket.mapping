@@ -1,0 +1,1 @@
+CLASS yr net/minecraft/network/packet/KickDisconnectPacket
