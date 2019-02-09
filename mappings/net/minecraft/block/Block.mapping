@@ -37,7 +37,7 @@ CLASS uu net/minecraft/block/Block
 	FIELD aJ SIGN_WALL Luu;
 	FIELD aK LEVER Luu;
 	FIELD aL STONE_PRESSURE_PLATE Luu;
-	FIELD a blockName Ljava/lang/String;
+	FIELD a unlocalizedName Ljava/lang/String;
 	FIELD aM IRON_DOOR Luu;
 	FIELD aN WOODEN_PRESSURE_PLATE Luu;
 	FIELD aO REDSTONE_ORE Luu;
@@ -78,7 +78,7 @@ CLASS uu net/minecraft/block/Block
 	FIELD ax DIAMOND_ORE Luu;
 	FIELD ay DIAMOND_BLOCK Luu;
 	FIELD az CRAFTING_TABLE Luu;
-	FIELD bA blockMaterial Lln;
+	FIELD bA material Lln;
 	FIELD bB slipperiness F
 	FIELD ba FENCE Luu;
 	FIELD bb PUMPKIN Luu;
@@ -92,43 +92,46 @@ CLASS uu net/minecraft/block/Block
 	FIELD bj REDSTONE_REPEATER_ON Luu;
 	FIELD bk LOCKED_CHEST Luu;
 	FIELD bl TRAP_DOOR Luu;
-	FIELD bm blockIndexInTexture I
-	FIELD bn blockId I
-	FIELD bo blockHardness F
-	FIELD bp blockResistance F
-	FIELD bq blockConstructorCalled Z
-	FIELD br enableStats Z
+	FIELD bm terrainTextureIndex I
+	FIELD bn ID I
+	FIELD bo hardness F
+	FIELD bp explosionResistance F
+	FIELD bq initialized Z
+	FIELD br collectBreakStatistics Z
 	FIELD bs minX D
 	FIELD bt minY D
 	FIELD bu minZ D
 	FIELD bv maxX D
 	FIELD bw maxY D
 	FIELD bx maxZ D
-	FIELD by stepSound Lct;
-	FIELD bz blockParticleGravity F
-	FIELD d soundPowderFootstep Lct;
-	FIELD e soundWoodFootstep Lct;
-	FIELD f soundGravelFootstep Lct;
-	FIELD g soundGrassFootstep Lct;
-	FIELD h soundStoneFootstep Lct;
-	FIELD i soundMetalFootstep Lct;
-	FIELD j soundGlassFootstep Lct;
-	FIELD k soundClothFootstep Lct;
-	FIELD l soundSandFootstep Lct;
+	FIELD by sound Lct;
+	FIELD bz particleGravity F
+	FIELD d powderSound Lct;
+	FIELD e woodSound Lct;
+	FIELD f gravelSound Lct;
+	FIELD g grassSound Lct;
+	FIELD h stoneSound Lct;
+	FIELD i metalSound Lct;
+	FIELD j glassSound Lct;
+	FIELD k clothSound Lct;
+	FIELD l sandSound Lct;
 	FIELD m blocksList [Luu;
-	FIELD n tickOnLoad [Z
-	FIELD o opaqueCubeLookup [Z
-	FIELD p isBlockContainer [Z
+	FIELD n shouldUpdateBlock [Z
+	FIELD o isOpaque [Z
+	FIELD p isContainer [Z
 	FIELD q lightOpacity [I
 	FIELD r canBlockGrass [Z
-	FIELD s lightValue [I
-	FIELD t setNeighborNotifyOnMetadataChange [Z
+	FIELD s lightStrength [I
+	FIELD t shouldUpdateNearbyBlocksOnMetadataChange [Z
 	FIELD u STONE Luu;
 	FIELD v GRASS Lwp;
 	FIELD w DIRT Luu;
 	FIELD x COBBLESTONE Luu;
 	FIELD y WOODEN_PLANKS Luu;
 	FIELD z SAPLING Luu;
+	METHOD <init> (IILln;)V
+		ARG 1 id
+		ARG 2 terrainTextureIndex
 	METHOD <init> (ILln;)V
 		ARG 1 blockId
 		ARG 2 blockMaterial
@@ -143,10 +146,12 @@ CLASS uu net/minecraft/block/Block
 		ARG 6 maxZ
 	METHOD a setStepSound (Lct;)Luu;
 		ARG 1 stepSound
+	METHOD a setUnlocalizedName (Ljava/lang/String;)Luu;
 	METHOD b getRenderType ()I
 	METHOD b setResistance (F)Luu;
 		ARG 1 resistance
 	METHOD b setTickOnLoad (Z)Luu;
+	METHOD c isOpaque ()Z
 	METHOD c setHardness (F)Luu;
 		ARG 1 hardness
 	METHOD d renderAsNormalBlock ()Z
@@ -156,3 +161,6 @@ CLASS uu net/minecraft/block/Block
 	METHOD k initBlock ()V
 	METHOD l setUnbreakable ()Luu;
 	METHOD m getHardness ()F
+	METHOD n getName ()Ljava/lang/String;
+	METHOD o getUnlocalizedName ()Ljava/lang/String;
+	METHOD q disableBreakStatistics ()Luu;

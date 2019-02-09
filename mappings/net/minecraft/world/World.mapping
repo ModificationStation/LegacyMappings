@@ -1,1 +1,2 @@
 CLASS fd net/minecraft/world/World
+	FIELD r random Ljava/util/Random;

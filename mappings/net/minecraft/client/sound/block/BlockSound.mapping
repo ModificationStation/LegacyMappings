@@ -1,0 +1,12 @@
+CLASS ct net/minecraft/client/sound/block/BlockSound
+	FIELD a name Ljava/lang/String;
+	FIELD b volumeMultiplier F
+	FIELD c pitchMultiplier F
+	METHOD <init> (Ljava/lang/String;FF)V
+		ARG 1 nameIn
+		ARG 2 volumeMultiplierIn
+		ARG 3 pitchMultiplierIn
+	METHOD a onBreak ()Ljava/lang/String;
+	METHOD b getMasterVolumeMultiplier ()F
+	METHOD c getMasterPitchMultiplier ()F
+	METHOD d onTouch ()Ljava/lang/String;
