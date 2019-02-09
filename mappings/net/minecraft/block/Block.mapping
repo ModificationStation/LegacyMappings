@@ -131,9 +131,10 @@ CLASS uu net/minecraft/block/Block
 	FIELD z SAPLING Luu;
 	METHOD <init> (IILln;)V
 		ARG 1 id
-		ARG 2 terrainTextureIndex
+		ARG 2 blockTerrainTextureIndex
+		ARG 3 blockMaterial
 	METHOD <init> (ILln;)V
-		ARG 1 blockId
+		ARG 1 blockID
 		ARG 2 blockMaterial
 	METHOD a setLightValue (F)Luu;
 		ARG 1 lightValue
@@ -144,13 +145,16 @@ CLASS uu net/minecraft/block/Block
 		ARG 4 maxX
 		ARG 5 maxY
 		ARG 6 maxZ
-	METHOD a setStepSound (Lct;)Luu;
-		ARG 1 stepSound
+	METHOD a getSideTexture (I)I
+		ARG 1 side
+	METHOD a setSound (Lct;)Luu;
+		ARG 1 blockSound
 	METHOD a setUnlocalizedName (Ljava/lang/String;)Luu;
 	METHOD b getRenderType ()I
-	METHOD b setResistance (F)Luu;
+	METHOD b setExplosionResistance (F)Luu;
 		ARG 1 resistance
-	METHOD b setTickOnLoad (Z)Luu;
+	METHOD b shouldUpdateOnTick (Z)Luu;
+		ARG 1 shouldUpdate
 	METHOD c isOpaque ()Z
 	METHOD c setHardness (F)Luu;
 		ARG 1 hardness
